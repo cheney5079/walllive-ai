@@ -1,0 +1,10 @@
+# Dart / Flutter
+.dart_tool/
+.packages
+build/
+**/Generated.xcconfig
+**/Flutter.podspec
+
+# 本地覆盖密钥（若复制 dev.env 到此处自行填写）
+.env
+assets/env/local.env

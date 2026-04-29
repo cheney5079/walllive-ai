@@ -1,0 +1,359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1272727396F00A3EC7A587C0 /* VideoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1808823525F5FE4DC89A27A7 /* VideoDetailView.swift */; };
+		1434754A97EE4A26477CF991 /* VolcanoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5465ED0F943CC29F51458 /* VolcanoService.swift */; };
+		14DB72E8543D7D1CBC8B94B0 /* MyWorkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1226416023F3E010E5EEDEE7 /* MyWorkView.swift */; };
+		2CDB95DABB078D872049481A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BEE4AA7C707B8E61A5A46D /* HomeView.swift */; };
+		38ADDB2EC8CF3672424147E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8DA17EFE6B72B7DC4D2167D /* Assets.xcassets */; };
+		3EB01632DE7ECBE45E29E49F /* WallpaperStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48073BE39B5DC3C2E4A0E0B /* WallpaperStore.swift */; };
+		4CA60C81231DC94ED0C485A5 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0390693B735BA84BF812BDAD /* AppTheme.swift */; };
+		59B05BC86B973711C6F07668 /* WallpaperItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A05749D27F00873688E9BA /* WallpaperItem.swift */; };
+		630999D05F5719352BB67CBA /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDA68F0275CED85670313B /* RootTabView.swift */; };
+		C6A42D05F2EA9F6C19F4FC56 /* LocalMediaStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D0079B832D7A727AA2913 /* LocalMediaStore.swift */; };
+		CAFE617A3FF966B7244DF69F /* LivewallAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AED50C8805B2B83EAEE0B52 /* LivewallAIApp.swift */; };
+		EA6D1AEA0BD3C56D12C904DB /* SecureSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35572865FB976D1227B9B53C /* SecureSettings.swift */; };
+		FE6FFD312C2E7CA708317217 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D892E80D1E1B900404683A5 /* SettingsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0390693B735BA84BF812BDAD /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		1226416023F3E010E5EEDEE7 /* MyWorkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWorkView.swift; sourceTree = "<group>"; };
+		12A05749D27F00873688E9BA /* WallpaperItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperItem.swift; sourceTree = "<group>"; };
+		1808823525F5FE4DC89A27A7 /* VideoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailView.swift; sourceTree = "<group>"; };
+		35572865FB976D1227B9B53C /* SecureSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureSettings.swift; sourceTree = "<group>"; };
+		4C8D0079B832D7A727AA2913 /* LocalMediaStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalMediaStore.swift; sourceTree = "<group>"; };
+		4D892E80D1E1B900404683A5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		55CDA68F0275CED85670313B /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		7AED50C8805B2B83EAEE0B52 /* LivewallAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivewallAIApp.swift; sourceTree = "<group>"; };
+		D8DA17EFE6B72B7DC4D2167D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E7BEE4AA7C707B8E61A5A46D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EBB5465ED0F943CC29F51458 /* VolcanoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolcanoService.swift; sourceTree = "<group>"; };
+		F48073BE39B5DC3C2E4A0E0B /* WallpaperStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperStore.swift; sourceTree = "<group>"; };
+		FFA1144D9AE407C2FEBB5316 /* LivewallAI.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = LivewallAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		45A9B90D5DCFFE6C571220CB = {
+			isa = PBXGroup;
+			children = (
+				9936D1EEDB9E496CCD943080 /* LivewallAI-SwiftUI */,
+				7FB4C3AB40D46FB4DEB7C6F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7FB4C3AB40D46FB4DEB7C6F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFA1144D9AE407C2FEBB5316 /* LivewallAI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9936D1EEDB9E496CCD943080 /* LivewallAI-SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				0390693B735BA84BF812BDAD /* AppTheme.swift */,
+				D8DA17EFE6B72B7DC4D2167D /* Assets.xcassets */,
+				E7BEE4AA7C707B8E61A5A46D /* HomeView.swift */,
+				7AED50C8805B2B83EAEE0B52 /* LivewallAIApp.swift */,
+				4C8D0079B832D7A727AA2913 /* LocalMediaStore.swift */,
+				1226416023F3E010E5EEDEE7 /* MyWorkView.swift */,
+				55CDA68F0275CED85670313B /* RootTabView.swift */,
+				35572865FB976D1227B9B53C /* SecureSettings.swift */,
+				4D892E80D1E1B900404683A5 /* SettingsView.swift */,
+				1808823525F5FE4DC89A27A7 /* VideoDetailView.swift */,
+				EBB5465ED0F943CC29F51458 /* VolcanoService.swift */,
+				12A05749D27F00873688E9BA /* WallpaperItem.swift */,
+				F48073BE39B5DC3C2E4A0E0B /* WallpaperStore.swift */,
+			);
+			path = "LivewallAI-SwiftUI";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E408B730BE7B8A497B7DBD97 /* LivewallAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8833790CE81D3517170E012 /* Build configuration list for PBXNativeTarget "LivewallAI" */;
+			buildPhases = (
+				63DD174A2DFE52DCCCB1EA09 /* Sources */,
+				8BA6156EB2AC9BCDB3CADDD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LivewallAI;
+			packageProductDependencies = (
+			);
+			productName = LivewallAI;
+			productReference = FFA1144D9AE407C2FEBB5316 /* LivewallAI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3ACCF1B18A8E2185FEAE2063 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = D433427AEA6B406E81A3FF57 /* Build configuration list for PBXProject "LivewallAI" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 45A9B90D5DCFFE6C571220CB;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 7FB4C3AB40D46FB4DEB7C6F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E408B730BE7B8A497B7DBD97 /* LivewallAI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BA6156EB2AC9BCDB3CADDD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38ADDB2EC8CF3672424147E5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63DD174A2DFE52DCCCB1EA09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CA60C81231DC94ED0C485A5 /* AppTheme.swift in Sources */,
+				2CDB95DABB078D872049481A /* HomeView.swift in Sources */,
+				CAFE617A3FF966B7244DF69F /* LivewallAIApp.swift in Sources */,
+				C6A42D05F2EA9F6C19F4FC56 /* LocalMediaStore.swift in Sources */,
+				14DB72E8543D7D1CBC8B94B0 /* MyWorkView.swift in Sources */,
+				630999D05F5719352BB67CBA /* RootTabView.swift in Sources */,
+				EA6D1AEA0BD3C56D12C904DB /* SecureSettings.swift in Sources */,
+				FE6FFD312C2E7CA708317217 /* SettingsView.swift in Sources */,
+				1272727396F00A3EC7A587C0 /* VideoDetailView.swift in Sources */,
+				1434754A97EE4A26477CF991 /* VolcanoService.swift in Sources */,
+				59B05BC86B973711C6F07668 /* WallpaperItem.swift in Sources */,
+				3EB01632DE7ECBE45E29E49F /* WallpaperStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		112CC27FDDE59244BCFD94B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		32524A04E13E1D33F84BBD38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "用于选择照片生成动态壁纸";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.livewall.LivewallAI;
+				PRODUCT_NAME = LivewallAI;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		40F165D492A6CF325B8A47C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A2A06FC9419C5E685ACA675F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "用于选择照片生成动态壁纸";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.livewall.LivewallAI;
+				PRODUCT_NAME = LivewallAI;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C8833790CE81D3517170E012 /* Build configuration list for PBXNativeTarget "LivewallAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2A06FC9419C5E685ACA675F /* Debug */,
+				32524A04E13E1D33F84BBD38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D433427AEA6B406E81A3FF57 /* Build configuration list for PBXProject "LivewallAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				112CC27FDDE59244BCFD94B5 /* Debug */,
+				40F165D492A6CF325B8A47C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3ACCF1B18A8E2185FEAE2063 /* Project object */;
+}

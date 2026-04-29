@@ -1,0 +1,33 @@
+# XcodeGen — 生成 LivewallAI.xcodeproj（需先 brew install xcodegen）
+name: LivewallAI
+options:
+  bundleIdPrefix: com.livewall
+  deploymentTarget:
+    iOS: "16.0"
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+targets:
+  LivewallAI:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - path: LivewallAI-SwiftUI
+        excludes:
+          - README_SETUP.txt
+    settings:
+      base:
+        PRODUCT_NAME: LivewallAI
+        PRODUCT_BUNDLE_IDENTIFIER: com.livewall.LivewallAI
+        CURRENT_PROJECT_VERSION: 1
+        MARKETING_VERSION: 1.0.0
+        TARGETED_DEVICE_FAMILY: "1,2"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: "用于选择照片生成动态壁纸"
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        ENABLE_PREVIEWS: YES
