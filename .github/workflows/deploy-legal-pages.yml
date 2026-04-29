@@ -1,0 +1,35 @@
+# 将 legal-h5 部署到 GitHub Pages，得到固定 HTTPS 链接（隐私政策 / 用户协议）
+# 需在仓库 Settings → Pages → Build and deployment → Source 选择「GitHub Actions」
+name: Deploy legal H5 to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "legal-h5/**"
+      - ".github/workflows/deploy-legal-pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: legal-h5
+      - id: deployment
+        uses: actions/deploy-pages@v4
