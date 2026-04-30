@@ -6,7 +6,8 @@
 4. 成功后访问（约 1～2 分钟生效）：
    - https://cheney5079.github.io/walllive-ai/privacy.html
    - https://cheney5079.github.io/walllive-ai/terms.html
+   - https://cheney5079.github.io/walllive-ai/support.html（App Store「技术支持网址」）
 
-若首页 404 正常：静态站点只放了这两个页面，无 index.html。
+若首页根路径 404：静态站点可无 index.html，直接访问上述具体路径即可。
 
 故障排查：Actions 报权限错误时，确认 Pages 源已切换为 GitHub Actions；首次需在 Actions 里批准 **workflow** 运行。

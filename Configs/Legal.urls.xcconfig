@@ -1,3 +1,4 @@
 // GitHub Pages（仓库 walllive-ai）部署 legal-h5 后生效的根路径链接：
 LEGAL_PRIVACY_POLICY_URL = https://cheney5079.github.io/walllive-ai/privacy.html
 LEGAL_USER_AGREEMENT_URL = https://cheney5079.github.io/walllive-ai/terms.html
+LEGAL_SUPPORT_URL = https://cheney5079.github.io/walllive-ai/support.html

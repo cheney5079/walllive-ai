@@ -1,7 +1,7 @@
 # XcodeGen — 生成 LivewallAI.xcodeproj（需先 brew install xcodegen）
 name: LivewallAI
 options:
-  bundleIdPrefix: com.livewall
+  bundleIdPrefix: com.cheney
   deploymentTarget:
     iOS: "16.0"
 settings:
@@ -12,6 +12,9 @@ targets:
     type: application
     platform: iOS
     deploymentTarget: "16.0"
+    configFiles:
+      Debug: Configs/App.xcconfig
+      Release: Configs/App.xcconfig
     sources:
       - path: LivewallAI-SwiftUI
         excludes:
@@ -19,15 +22,34 @@ targets:
     settings:
       base:
         PRODUCT_NAME: LivewallAI
-        PRODUCT_BUNDLE_IDENTIFIER: com.livewall.LivewallAI
+        PRODUCT_BUNDLE_IDENTIFIER: com.cheney.wallpaper
         CURRENT_PROJECT_VERSION: 1
         MARKETING_VERSION: 1.0.0
         TARGETED_DEVICE_FAMILY: "1,2"
         GENERATE_INFOPLIST_FILE: YES
+        # 主屏显示名（与 App Store 套装名「AI Wallpaper App」一致；Target 产品名仍为 LivewallAI 以免改工程名带来路径问题）
+        INFOPLIST_KEY_CFBundleDisplayName: "AI Wallpaper App"
+        INFOPLIST_KEY_NSHumanReadableCopyright: "© 2026 AI Wallpaper App"
         INFOPLIST_KEY_NSPhotoLibraryUsageDescription: "用于选择照片生成动态壁纸"
+        INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription: "用于将生成的动态视频保存到相册，以便在系统壁纸中使用"
         INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
         INFOPLIST_KEY_UILaunchScreen_Generation: YES
-        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+        # 上架校验：含 iPad 时须「支持全部方向」或声明全屏应用；下列组合可通过校验并保持竖屏为主
+        INFOPLIST_KEY_UIRequiresFullScreen: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: UIInterfaceOrientationPortrait
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        # 与 Xcode 建议一致：资源目录生成 Swift 符号扩展（方便 Image(.xxx) / Color.xxx）
+        ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS: YES
+        # 对 Run Script 阶段启用沙箱（当前工程无复杂脚本，推荐开启）
+        ENABLE_USER_SCRIPT_SANDBOXING: YES
         ENABLE_PREVIEWS: YES
+        # 火山 Key：$(VOLCANO_API_KEY) 来自 Configs/Secrets.local.xcconfig（可选），或由 CI：xcodebuild VOLCANO_API_KEY="..." …（勿在 target 里写死 VOLCANO_API_KEY，以免覆盖 xcconfig）
+        INFOPLIST_KEY_VOLCANO_API_KEY: $(VOLCANO_API_KEY)
+        # 隐私政策 / 用户协议 H5（部署 legal-h5 后把 Configs/Legal.urls.xcconfig 里域名改成 HTTPS 线上地址）
+        INFOPLIST_KEY_LegalPrivacyPolicyURL: $(LEGAL_PRIVACY_POLICY_URL)
+        INFOPLIST_KEY_LegalUserAgreementURL: $(LEGAL_USER_AGREEMENT_URL)
+        INFOPLIST_KEY_LegalSupportURL: $(LEGAL_SUPPORT_URL)
+        # 签名 Team ID 见 Configs/Signing.xcconfig（勿在此处重复写 DEVELOPMENT_TEAM，以免覆盖 xcconfig）
+        CODE_SIGN_STYLE: Automatic

@@ -1,0 +1,14 @@
+App Store Connect 登记信息（备忘，勿提交机密密钥）
+==================================================
+
+套装名称 / App：AI Wallpaper App
+Bundle ID：       com.cheney.wallpaper
+SKU：             ai_wallpaper_001
+Apple ID：        6764562034
+
+技术支持网址（上架填写）：
+  https://cheney5079.github.io/walllive-ai/support.html
+
+内容版权 / Copyright：
+  请在 App Store Connect → App 信息 →「版权」填写上架文案（示例：© 2026 Your Name）。
+  工程内 INFOPLIST NSHumanReadableCopyright 可与后台保持一致，便于核对。

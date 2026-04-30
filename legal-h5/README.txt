@@ -5,9 +5,10 @@
   privacy.html   — 隐私政策全文（由 LegalCopy.swift 脚本生成，修改条文后请重新生成或手动同步）
   terms.html     — 用户协议全文
 
-部署后你将得到两个 HTTPS 链接（示例结构）：
+部署后你将得到 HTTPS 链接（示例结构）：
   https://<你的域名>/legal-h5/privacy.html
   https://<你的域名>/legal-h5/terms.html
+  https://<你的域名>/legal-h5/support.html   （App Store「技术支持网址」）
 
 配置步骤：
   1. 将 legal-h5 整个目录上传到任意 HTTPS 静态托管（对象存储 + CDN、GitHub Pages、Vercel、自有 Nginx 等）。
